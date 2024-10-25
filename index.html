@@ -1,325 +1,703 @@
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Nike Store</title>
+<meta charset="utf-8">
+<!--For responsive		-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	
+<title>Medical HTML</title>
+
+<!--Owl Carousel	-->	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"  />
+	
+	
+<!--Bootstra CSS	-->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+<!--Custom Style CSS	-->
+<link rel="stylesheet" href="css/style.css" type="text/css">	
 </head>
 
 <body>
-    <nav id="nav">
-        <div class="navTop">
-            <div class="navItem">
-                <img src="./img/sneakers2.png" width="140" height="140">
-            </div>
-            <div class="navItem">
-                <div class="search">
-                    <input type="text" placeholder="Search..." class="searchInput">
-                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
-                </div>
-            </div>
-            <div class="navItem">
-                <span class="limitedOffer">Limited Offer!</span>
-            </div>
-        </div>
-        <div class="navBottom">
-            <h3 class="menuItem">AIR FORCE</h3>
-            <h3 class="menuItem">JORDAN</h3>
-            <h3 class="menuItem">BLAZER</h3>
-            <h3 class="menuItem">CRATER</h3>
-            <h3 class="menuItem">HIPPIE</h3>
-        </div>
-    </nav>
-    <div class="slider">
-        <div class="sliderWrapper">
-            <div class="sliderItem">
-                <img src="./img/air.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$119</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/jordan.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$149</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/blazer.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$109</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/crater.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$129</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/hippie.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$99</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-        </div>
+	
+	
+	
+<!--Start Header	-->
+<header>
+	   <div class="container">
+	     <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+	    <img src="images/logo.png" alt="">
+	  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-section">About</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="#services-section">Services</a>
+        </li>
+		   <li class="nav-item">
+          <a class="nav-link " href="#reviews-section">Reviews</a>
+        </li>
+		    <li class="nav-item">
+          <a class="nav-link " href="#team-section">Our Doctors</a>
+        </li>
+		  
+		    <li class="nav-item">
+          <a class="nav-link " href="registration.html">Registration</a>
+        </li>
+		  
+		 <li class="nav-item">
+          <a class="nav-link " href="#booking-section">Book Appointment</a>
+        </li> 
+		  
+		  
+		  
+		  
+      </ul>
+     
     </div>
-   
-    <div class="features">
-        <div class="feature">
-            <img src="./img/shipping.png" alt="" class="featureIcon">
-            <span class="featureTitle">FREE SHIPPING</span>
-            <span class="featureDesc">Free worldwide shipping on all orders.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./img/return.png" alt="">
-            <span class="featureTitle">30 DAYS RETURN</span>
-            <span class="featureDesc">No question return and easy refund in 14 days.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./img/gift.png" alt="">
-            <span class="featureTitle">GIFT CARDS</span>
-            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./img/contact.png" alt="">
-            <span class="featureTitle">CONTACT US!</span>
-            <span class="featureDesc">Keep in touch via email and support system.</span>
-        </div>
-    </div>
+  </div>
+</nav>
+	</div>
+	</header>	
+<!--End Header	-->
+	
+	
+	
+<!--Start Hero Banner	-->
+	<section class="hero-banner" id="home-section">
+	     <div class="container">
+		     <div class="row">
+			      <div class="col-md-12">
+				      <div class="banner-text-wrap">
+					       <h1 class="text-white">We Provide Best Medical Services</h1>
+						  <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+						  <a href="#"  class="btn btn-white">Book Appointment</a>
+					  </div>
+				 </div>
+			 </div>
+		</div>
+	</section>
+<!--End Hero Banner	-->
+	
+	
+<!--Start Features Section	-->
+	<section class="features-section">
+	      <div class="container">
+		     <div class="row gx-0">
+			      
+				 <div class="col-md-4">
+				      <div class="features-box bg1">
+					      <img src="images/calendar.png" alt="">
+						  <h3>24 Hours Services</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+					 </div>
+				 </div>
+				 
+				 
+				  <div class="col-md-4">
+				      <div class="features-box bg2">
+					      <img src="images/staff.png" alt="">
+						  <h3>Professional Staff</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+					 </div>
+				 </div>
+				 
+				   <div class="col-md-4">
+				      <div class="features-box bg3">
+					      <img src="images/ambulance.png" alt="">
+						  <h3>Emergency Care</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+					 </div>
+				 </div>
+				 
+				 
+			  </div>
+		</div>
+	</section>
+<!--End Features Section	-->
+	
+	
 
-    <div class="product" id="product">
-        <img src="./img/air.png" alt="" class="productImg">
-        <div class="productDetails">
-            <h1 class="productTitle">AIR FORCE</h1>
-            <h2 class="productPrice">$199</h2>
-            <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
-                dolorum
-                doloremque sapiente aliquid aperiam.</p>
-            <div class="colors">
-                <div class="color"></div>
-                <div class="color"></div>
-            </div>
-            <div class="sizes">
-                <div class="size">42</div>
-                <div class="size">43</div>
-                <div class="size">44</div>
-            </div>
-            <button class="productButton">BUY NOW!</button>
-        </div>
-        <div class="payment">
-            <h1 class="payTitle">Personal Information</h1>
-            <label>Name and Surname</label>
-            <input type="text" placeholder="John Doe" class="payInput">
-            <label>Phone Number</label>
-            <input type="text" placeholder="+1 234 5678" class="payInput">
-            <label>Address</label>
-            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
-            <h1 class="payTitle">Card Information</h1>
-            <div class="cardIcons">
-                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
-                <img src="./img/master.png" alt="" width="40" class="cardIcon">
-            </div>
-            <input type="password" class="payInput" placeholder="Card Number">
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm">
-                <input type="text" placeholder="yyyy" class="payInput sm">
-                <input type="text" placeholder="cvv" class="payInput sm">
-            </div>
-            <button class="payButton">Checkout!</button>
-            <span class="close">X</span>
-        </div>
-    </div>
+<!--	Start About Section-->
+	<section class="about-section"  id="about-section">
+	      <div class="container">
+		      <div class="row gx-5">
+			      
+				 <div class="col-md-6">
+				        <div class="about-media">
+					      <img src="images/about.jpg" alt="" >
+					 </div>
+				  </div>
+				  
+				  <div class="col-md-6">
+				       <div  class="about-info">
+						   <h3>About Us</h3>
+					        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
 
+</p>
+						   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+						   
+						    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release</p>
+						   <a href="#" class="btn btn-primary">Lean More</a>
+					  </div>
+				  </div>
+				  
+				  
+				  
+			  </div>
+		</div>
+	</section>
+<!--	End About Section-->
+	
+	
+	
+<!--Start services Section-->
+	<section class="services-section" id="services-section">
+	     <div class="container">
+		     <div class="row">
+			     
+				 <div class="col-md-12">
+				     <h2 class="section-title text-center">Services</h2>
+				 </div>
+				 
+				 
+				 <div class="col-md-4">
+				      <div class="services-box">
+					      <img src="images/neurology-icon.png" alt="">
+						  <h3>Neurology</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+					 </div>
+				 </div>
+				 
+				 
+				 <div class="col-md-4">
+				      <div class="services-box">
+					      <img src="images/eyecare-icon.png" alt="">
+						  <h3>Eyes care</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+					 </div>
+				 </div> 
+				 
+				 
+				<div class="col-md-4">
+				      <div class="services-box">
+					      <img src="images/pulmonary-icon.png" alt="">
+						  <h3>Pulomonary</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+					 </div>
+				 </div>  
+				 
+				 <div class="col-md-4">
+				      <div class="services-box">
+					      <img src="images/cardiology-icon.png" alt="">
+						  <h3>Cardiology</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+					 </div>
+				 </div>  
+				 
+				 
+				  <div class="col-md-4">
+				      <div class="services-box">
+					      <img src="images/dental-icon.png" alt="">
+						  <h3>Dental Care</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+					 </div>
+				 </div>
+				 
+				 
+				   <div class="col-md-4">
+				      <div class="services-box">
+					      <img src="images/hepatology-icon.png" alt="">
+						  <h3>Hepatology</h3>
+						  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+					 </div>
+				 </div>
+				 
+				 
+			 </div>
+		</div>
+	</section>
+<!--End services Section-->
+	
+	
+	
+<!--Start reviews Section	-->
+	<section class="reviews-section bg-overlay" id="reviews-section">
+	     <div class="container">
+		     <div class="row">
+			      <div class="col-md-12">
+				        <h2 class="section-title">Customer Reviews</h2>
+				 </div>
+				 
+				 
+				<div class="col-md-12">
+				    
+					<div class="reviews-slide owl-theme owl-carousel">
+					    
+						<div class="item">
+						     <div class="review-box">
+							      <div class="review-media">
+								      <img src="images/client1.jpg" alt="" >
+								 </div>
+								 <div class="review-info">
+								     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+									 <h4>John Doe</h4>
+									 <h5>Patient of Neuorology</h5>
+								 </div>
+							</div>
+						</div>
+						
+						
+						<div class="item">
+						     <div class="review-box">
+							      <div class="review-media">
+								      <img src="images/client2.jpg" alt="" >
+								 </div>
+								 <div class="review-info">
+								     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+									 <h4>John Doe</h4>
+									 <h5>Patient of Neuorology</h5>
+								 </div>
+							</div>
+						</div>
+						
+						
+						<div class="item">
+						     <div class="review-box">
+							      <div class="review-media">
+								      <img src="images/client3.jpg" alt="" >
+								 </div>
+								 <div class="review-info">
+								     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+									 <h4>John Doe</h4>
+									 <h5>Patient of Neuorology</h5>
+								 </div>
+							</div>
+						</div>
+						
+					 
+						
+					</div>
+					
+					
+				 </div> 
+				 
+				 
+				 
+				 
+				 
+			 </div>
+		</div>
+	</section>
+<!--End reviews Section	-->
+	
+	
+	
+	
+<!--Start Team Section	-->
+	
+	<section class="team-section" id="team-section">
+	     <div class="container">
+		     <div class="row">
+			      <div class="col-md-12">
+				      <h2 class="section-title text-center">Our Expert Team</h2>
+				 </div>
+				 
+				 
+				 <div class="col-md-3">
+				     <div class="team-box">
+					     <div class="team-media">
+						      <img src="images/team/1.jpg" alt="" >
+						 </div>
+						 <div class="team-info">
+						     <h3>Johnathan Doe</h3>
+							 <p>Cardiologist</p>
+							 <ul class="team-social">
+							    <li> <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>  </li>
+							    <li> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>  </li>
+							 </ul>
+						 </div>
+					 </div>
+				 </div>
+				 
+			 <div class="col-md-3">
+				     <div class="team-box">
+					     <div class="team-media">
+						      <img src="images/team/2.jpg" alt="" >
+						 </div>
+						 <div class="team-info">
+						     <h3>Johnathan Doe</h3>
+							 <p>Cardiologist</p>
+							 <ul class="team-social">
+							    <li> <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>  </li>
+							    <li> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>  </li>
+							 </ul>
+						 </div>
+					 </div>
+				 </div>
+				 
+				 
+				  <div class="col-md-3">
+				     <div class="team-box">
+					     <div class="team-media">
+						      <img src="images/team/3.jpg" alt="" >
+						 </div>
+						 <div class="team-info">
+						     <h3>Johnathan Doe</h3>
+							 <p>Cardiologist</p>
+							 <ul class="team-social">
+							    <li> <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>  </li>
+							    <li> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>  </li>
+							 </ul>
+						 </div>
+					 </div>
+				 </div>
+				 
+				 
+				  <div class="col-md-3">
+				     <div class="team-box">
+					     <div class="team-media">
+						      <img src="images/team/4.jpg" alt="" >
+						 </div>
+						 <div class="team-info">
+						     <h3>Johnathan Doe</h3>
+							 <p>Cardiologist</p>
+							 <ul class="team-social">
+							    <li> <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i> </a>  </li>
+							    <li> <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>  </li>
+							    <li> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>  </li>
+							 </ul>
+						 </div>
+					 </div>
+				 </div>
+				 
+				 
+			 </div>
+		</div>
+	</section>
+<!--End Team Section	-->
+	
+	
 
+	
+<!--Start Booking Section-->
 
-    <div class="gallery">
-        <div class="galleryItem">
-            <h1 class="galleryTitle">JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1585843736857-bd7438e55c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9yZGFuJTIwc2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-        <div class="galleryItem">
-            <img src="https://images.unsplash.com/photo-1611510338559-2f463335092c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGpvcmRhbiUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-            <h1 class="galleryTitle">BUY IT FEEL IT</h1>
-        </div>
-        <div class="galleryItem">
-            <h1 class="galleryTitle">OFF WHITE_X_AIR JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1605523741177-cd660595c2cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGpvcmRhbiUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-    </div>
-    
+<section class="booking-section bg-overlay" id="booking-section">
+	    <div class="container">
+	     <div class="row">
+			    
+			    <div class="col-md-6">
+			       <div class="form-col">
+					    <h4>Make An Appointment</h4>
+					   <h3>Get Free Consultation</h3>
+					</div>
+					
+					<form>
+					    
+						<div class="row">
+						     <div class="col-md-6">
+							     <div class="form-group">
+								       <input type="text" class="form-control" placeholder="Name">
+								       <span class="error" id="nameError">Name is required.</span>
+								 </div>
+							</div>
+							
+							<div class="col-md-6">
+							     <div class="form-group">
+								       <input type="text" class="form-control" placeholder="Email">
+								 </div>
+							</div>
+						 
+							
+							<div class="col-md-12">
+							     <div class="form-group">
+								       <input type="text" class="form-control" placeholder="Subject">
+								</div>
+							</div>
+							
+							<div class="col-md-12">
+							     <div class="form-group">
+								       <textarea class="form-control" placeholder="Message"></textarea>
+								</div>
+							</div>
+							
+							<div class="col-md-12">
+							     <div class="form-group">
+								     <input type="submit" value="Submit"  class="btn btn-primary">
+								</div>
+							</div>
+							
+						</div>
+						 
+						
+					</form>
+					<script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            let valid = true;
 
-    <div class="gallery">
-        <div class="galleryItem">
-            <h1 class="galleryTitle">JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1628413993904-94ecb60f1239?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8am9yZGFuJTIwc2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-        <div class="galleryItem">
-            <img src="https://images.unsplash.com/photo-1605523741161-81a9b477ab1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGpvcmRhbiUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-            <h1 class="galleryTitle">BUY IT FEEL IT</h1>
-        </div>
-        <div class="galleryItem">
-            <h1 class="galleryTitle">OFF WHITE_X_AIR JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1595909236612-9fd30b476365?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGpvcmRhbiUyMHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-    </div>
+            // Clear previous errors
+            document.querySelectorAll('.error').forEach(error => {
+                error.style.display = 'none';
+            });
 
+            // Validate Name
+            const name = document.getElementById('name').value;
+            if (!name) {
+                document.getElementById('nameError').style.display = 'inline';
+                valid = false;
+            }
 
-    <div class="gallery">
-        <div class="galleryItem">
-            <h1 class="galleryTitle">JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1656085180791-0e634c8bd1e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTgzfHxqb3JkYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-        <div class="galleryItem">
-            <img src="https://images.unsplash.com/photo-1601879305068-751abb5821e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA5fHxqb3JkYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-            <h1 class="galleryTitle">BUY IT FEEL IT</h1>
-        </div>
-        <div class="galleryItem">
-            <h1 class="galleryTitle">OFF WHITE_X_AIR JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1577983102338-67243f389b78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjAzfHxqb3JkYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-    </div>
+            // Validate Email
+            const email = document.getElementById('email').value;
+            if (!email.includes('@') || !email.includes('.')) {
+                document.getElementById('emailError').style.display = 'inline';
+                valid = false;
+            }
 
-<div class="gallery">
-        <div class="galleryItem">
-            <h1 class="galleryTitle">JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1640251809451-e9f669695f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGpvcmRhbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-        <div class="galleryItem">
-            <img src="https://images.unsplash.com/photo-1617813254792-fdff65b515a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8am9yZGFuc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-            <h1 class="galleryTitle">BUY IT FEEL IT</h1>
-        </div>
-        <div class="galleryItem">
-            <h1 class="galleryTitle">OFF WHITE_X_AIR JORDAN</h1>
-            <img src="https://images.unsplash.com/photo-1513188732907-5f732b831ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9yZGFuc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="galleryImg">
-        </div>
-    </div>
-    
+            // Validate Password
+            const password = document.getElementById('password').value;
+            if (password.length < 6) {
+                document.getElementById('passwordError').style.display = 'inline';
+                valid = false;
+            }
 
+            if (!valid) {
+                event.preventDefault(); // Prevent form submission if validation fails
+            }
+        });
+    </script>
+					
+					
+					
+					
+			 </div>
+			 
+			</div>
+	</div>
+	</section>	
+	
+<!--End Booking Section-->
+	
+	
+	
+<!--Start Blog 	-->
+	<section class="blog-section" id="blog-section">
+		
+		<div class="container">
+		     <div class="row">
+			     <div  class="col-md-12">
+				      <h2 class="section-title text-center">Blog & News</h2>
+				 </div>
+				 
+				 
+				<div class="col-md-4">
+				      <div class="blog-box">
+					     <div class="blog-media">
+						      <img src="images/blog1.jpg" alt="">
+						  </div>
+						  <div class="blog-info">
+						      <h3><a href="#">Lorem Ipsum is simply dummy  </a></h3>
+							  <ul class="meta">
+							      <li> <i class="fa fa-calendar" aria-hidden="true"></i> 18 Sep 2021 </li>
+							      <li> <i class="fa fa-user-o" aria-hidden="true"></i> Admin </li>
+							  </ul>
+							  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						  </div>
+					</div>
+				 </div> 
+				 
+				
+				 <div class="col-md-4">
+				      <div class="blog-box">
+					     <div class="blog-media">
+						      <img src="images/blog2.jpg" alt="">
+						  </div>
+						  <div class="blog-info">
+						      <h3><a href="#">Lorem Ipsum is simply  </a></h3>
+							  <ul class="meta">
+							      <li> <i class="fa fa-calendar" aria-hidden="true"></i> 18 Sep 2021 </li>
+							      <li> <i class="fa fa-user-o" aria-hidden="true"></i> Admin </li>
+							  </ul>
+							  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						  </div>
+					</div>
+				 </div> 
+				 
+				 
+				 <div class="col-md-4">
+				      <div class="blog-box">
+					     <div class="blog-media">
+						      <img src="images/blog3.jpg" alt="">
+						  </div>
+						  <div class="blog-info">
+						      <h3><a href="#">Lorem Ipsum is simply dummy  </a></h3>
+							  <ul class="meta">
+							      <li> <i class="fa fa-calendar" aria-hidden="true"></i> 18 Sep 2021 </li>
+							      <li> <i class="fa fa-user-o" aria-hidden="true"></i> Admin </li>
+							  </ul>
+							  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						  </div>
+					</div>
+				 </div> 
+				 
+				 
+			</div>
+		</div>
+		
+	</section>
+<!--End Blog 	-->
+	
 
-    <div class="gallery">
-        <div class="galleryItem">
-            <h1 class="galleryTitle"></h1>
-            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
-        </div>
-        <div class="galleryItem">
-            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
-            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
-        </div>
-        <div class="galleryItem">
-            <h1 class="galleryTitle">Just Do it!</h1>
-            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
-        </div>
-    </div>
-    <div class="newSeason">
-        <div class="nsItem">
-            <img src="https://images.unsplash.com/photo-1655853548169-646b6e0f15ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYxfHxqb3JkYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="nsImg">
-        </div>
-        <div class="nsItem">
-            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
-            <h1 class="nsTitle">New Season</h1>
-            <h1 class="nsTitle">New Collection</h1>
-            <a href="#nav">
-                <button class="nsButton">CHOOSE YOUR STYLE</button>
-            </a>
-        </div>
-        <div class="nsItem">
-            <img src="https://images.unsplash.com/photo-1663856548834-3b5814f6dc11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM1fHxqb3JkYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="" class="nsImg">
-        </div>
-    </div>
-    <footer>
-        <div class="footerLeft">
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">About Us</h1>
-                <ul class="fList">
-                    <li class="fListItem">Company</li>
-                    <li class="fListItem">Contact</li>
-                    <li class="fListItem">Careers</li>
-                    <li class="fListItem">Affiliates</li>
-                    <li class="fListItem">Stores</li>
-                </ul>
-            </div>
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">Useful Links</h1>
-                <ul class="fList">
-                    <li class="fListItem">Support</li>
-                    <li class="fListItem">Refund</li>
-                    <li class="fListItem">FAQ</li>
-                    <li class="fListItem">Feedback</li>
-                    <li class="fListItem">Stories</li>
-                </ul>
-            </div>
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">Products</h1>
-                <ul class="fList">
-                    <li class="fListItem">Air Force</li>
-                    <li class="fListItem">Air Jordan</li>
-                    <li class="fListItem">Blazer</li>
-                    <li class="fListItem">Crater</li>
-                    <li class="fListItem">Hippie</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footerRight">
-            <div class="footerRightMenu">
-                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
-                <div class="fMail">
-                    <input type="text" placeholder="your@email.com" class="fInput">
-                    <button class="fButton">Join!</button>
-                </div>
-            </div>
-            <div class="footerRightMenu">
-                <h1 class="fMenuTitle">Follow Us</h1>
-                <div class="fIcons">
-                    <img src="./img/facebook.png" alt="" class="fIcon">
-                    <img src="./img/twitter.png" alt="" class="fIcon">
-                    <img src="./img/instagram.png" alt="" class="fIcon">
-                    <img src="./img/whatsapp.png" alt="" class="fIcon">
-                </div>
-            </div>
-            <div class="footerRightMenu">
-                <span class="copyright">@whiteDEVIL. All rights reserved. 2022.</span>
-            </div>
-        </div>
-    </footer>
-    <script src="./app.js"></script>
+	
+	
+<!--Start Footer	-->
+<footer>
+     <div class="container">
+	     <div class="row">
+			 
+		     <div class="col-md-4">
+			      <div class="footer-widget">
+				      <h3>Contact Us</h3>
+					  
+					  <ul class="footer-address">
+					      <li>
+						    <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <div>
+							     <h4>Address</h4>
+								  <p>33 Lorem Ipsum is simply dummy <br>text of the printing</p>
+							  </div>
+						  </li>
+						  
+						  <li>
+						    <i class="fa fa-phone" aria-hidden="true"></i>
+							  <div>
+							     <h4>Phone</h4>
+								  <p> <a href="tel:+0123456789">+0123456789</a></p>
+							  </div>
+						  </li> 
+						  
+						   <li>
+						   <i class="fa fa-envelope-o" aria-hidden="true"></i>
+							  <div>
+							     <h4>Email</h4>
+								  <p> <a href="tel:+0123456789">Support@company.com</a></p>
+							  </div>
+						  </li> 
+						  
+						  
+					  </ul>
+				 </div>
+			 </div> 
+			 
+			 
+			 
+			<div class="col-md-2">
+			      <div class="footer-widget">
+				      <h3>Services</h3>
+					   <ul class="footer-menu">
+						   <li> <a href="#"> Neurology </a> </li>
+						   <li> <a href="#"> Eyes care </a> </li>
+						   <li> <a href="#"> Pulomonary</a> </li>
+						   <li> <a href="#"> Cardiology</a> </li>
+						   <li> <a href="#">Dental Care</a> </li>
+						   <li> <a href="#">Hepatology</a> </li>
+					  </ul>
+				 </div>
+			 </div>  
+			 
+			 
+			<div class="col-md-2">
+			      <div class="footer-widget">
+				      <h3>Services</h3>
+					   <ul class="footer-menu">
+						   <li> <a href="#"> Neurology </a> </li>
+						   <li> <a href="#"> Eyes care </a> </li>
+						   <li> <a href="#"> Pulomonary</a> </li>
+						   <li> <a href="#"> Cardiology</a> </li>
+						   <li> <a href="#">Dental Care</a> </li>
+						   <li> <a href="#">Hepatology</a> </li>
+					  </ul>
+				 </div>
+			 </div>   
+			 
+			 
+				<div class="col-md-4">
+			      <div class="footer-widget">
+				      <h3>Newsletter</h3>
+					   <form>
+					       <input type="email" placeholder="Enter Email"  class="form-control mb-2">
+						   <input type="submit" value="Subscribe"  class="btn btn-white">
+					  </form>
+				 </div>
+			 </div>   
+			 
+			 
+			 
+			 
+		 </div>
+	</div>	
+</footer>	
+<!--End Footer	-->
+	
+	
+	
+	
+	
+	
+<!--Script-->
+	
+<script src="js/jquery-3.4.1.min.js" type="text/javascript" > </script>	
+	
+	
+<!--Bootstra JS	-->
+<script src="js/bootstrap.min.js" type="text/javascript" > </script>
+	
+<!--Owl Carousel	-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" type="text/javascript" > </script>	
+
+<!--Custom JS	-->
+ <script src="js/custom.js" type="text/javascript" > </script>
+
+<script>
+$('.reviews-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+	</script>
+	
+	
+	
 </body>
-
 </html>
